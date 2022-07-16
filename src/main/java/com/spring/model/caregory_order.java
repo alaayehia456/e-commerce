@@ -1,8 +1,10 @@
 package com.spring.model;
 
+import com.sun.istack.NotNull;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import lombok.NonNull;
 import org.hibernate.annotations.CreationTimestamp;
 import org.hibernate.annotations.UpdateTimestamp;
 
@@ -18,6 +20,7 @@ import java.util.Date;
 public class caregory_order extends BaseEntity{
 
     @Column
+    @NonNull
     private String name;
 
     @Column

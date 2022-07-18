@@ -5,6 +5,8 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
+import java.util.ArrayList;
+import java.util.List;
 
 @Entity
 @AllArgsConstructor
@@ -25,6 +27,12 @@ public class client {
 
     @Column
     private String phoneNumber;
+
+
+
+    @OneToMany(cascade = CascadeType.ALL,mappedBy = "clients")
+    private List<reqestOrder> reqestOrderList=new ArrayList<>();
+
 
 
 }

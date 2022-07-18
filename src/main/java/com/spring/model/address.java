@@ -25,4 +25,11 @@ public class address {
     @Column
     private String zipCode;
 
+
+
+    @OneToOne
+   @PrimaryKeyJoinColumn
+    private reqestOrder order;
+
+
 }

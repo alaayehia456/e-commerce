@@ -25,4 +25,10 @@ public class item {
     @Column
     private int price;
 
+
+    @ManyToOne
+    @JoinColumn(name = "itemList")
+    private reqestOrder order;
+
+
 }

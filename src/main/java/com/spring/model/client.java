@@ -22,6 +22,8 @@ public class client {
     @Column
     private String fullName;
 
+
+
     @Column
     private String email;
 
